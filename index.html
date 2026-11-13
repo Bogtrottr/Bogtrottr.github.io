@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Links</title>
+  <style>
+    :root {
+      --bg: #0f0f11;
+      --card: #1a1a1f;
+      --card-hover: #25252d;
+      --text: #f4f4f6;
+      --muted: #9ca3af;
+      --border: #2e2e36;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      padding: 48px 20px;
+      min-height: 100vh;
+    }
+    .container {
+      width: 100%;
+      max-width: 480px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--border);
+      margin-bottom: 16px;
+    }
+    h1 { font-size: 1.4rem; font-weight: 700; margin-bottom: 6px; }
+    .bio { font-size: 0.95rem; color: var(--muted); margin-bottom: 28px; line-height: 1.4; }
+    .links { width: 100%; display: flex; flex-direction: column; gap: 12px; }
+    .link-card {
+      display: block;
+      width: 100%;
+      padding: 16px 20px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+    .link-card:hover {
+      background: var(--card-hover);
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <!-- Replace src with a link to your profile photo, or delete the <img> tag -->
+    <img class="avatar" src="https://via.placeholder.com/150" alt="Profile picture" />
+    <h1>Your Name</h1>
+    <p class="bio">Designer, creator, and builder. Welcome to my corner of the internet.</p>
+
+    <div class="links">
+      <a class="link-card" href="https://yourportfolio.com" target="_blank">Portfolio &amp; Work</a>
+      <a class="link-card" href="https://instagram.com" target="_blank">Instagram</a>
+      <a class="link-card" href="https://youtube.com" target="_blank">YouTube</a>
+      <a class="link-card" href="mailto:you@example.com">Get in Touch</a>
+    </div>
+  </main>
+</body>
+</html>
